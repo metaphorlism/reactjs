@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import useLocalStorage from "@/hooks/useLocalStorage";
 
@@ -20,6 +22,11 @@ function MyComponent() {
 
   return (
     <div className="flex flex-col items-center mt-5">
+      <div>
+        <h1 className="text-center font-bold text-2xl my-4">
+          Use LocalStorage
+        </h1>
+      </div>
       <div>
         <label htmlFor="name-input">Name:</label>
         <input

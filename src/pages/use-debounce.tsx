@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useState } from "react";
 import useDebounce from "@/hooks/useDebounce";
 
@@ -22,6 +23,9 @@ export default function Home() {
 
   return (
     <div className="flex flex-col items-center">
+      <div>
+        <h1 className="text-center font-bold text-2xl my-4">Use Debounce</h1>
+      </div>
       <input
         type="text"
         value={searchTerm}
